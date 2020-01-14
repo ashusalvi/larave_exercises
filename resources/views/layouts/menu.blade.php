@@ -7,7 +7,7 @@
 </li>
 <li class="nav-item">
 
-    <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    <a class="nav-link" href="/customer" role="button" aria-haspopup="true" aria-expanded="false">
         Customer
     </a>
 

@@ -21,10 +21,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 // company route
-Route::get('/company','Company\CompanyController@index');
-Route::get('/company/create','Company\CompanyController@create');
-Route::post('/company','Company\CompanyController@store');
-Route::get('/company/{company}','Company\CompanyController@show');
-Route::get('/company/{company}/edit','Company\CompanyController@edit');
-Route::patch('/company/{company}','Company\CompanyController@update');
-Route::delete('/company/{company}','Company\CompanyController@destroy');
+// Route::get('/company','Company\CompanyController@index');
+// Route::get('/company/create','Company\CompanyController@create');
+// Route::post('/company','Company\CompanyController@store');
+// Route::get('/company/{company}','Company\CompanyController@show');
+// Route::get('/company/{company}/edit','Company\CompanyController@edit');
+// Route::patch('/company/{company}','Company\CompanyController@update');
+// Route::delete('/company/{company}','Company\CompanyController@destroy');
+
+Route::resource('company', 'Company\CompanyController');
+
+// Customer Route
+Route::get('/customer','Customer\CustomerController@index');
+Route::get('/customer/create','Customer\CustomerController@create');
+
